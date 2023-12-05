@@ -56,7 +56,7 @@ app. get('/', (requisicao, resposta) => {
         })
 
         console.log(tarefas)
-        
+        resposta.render('home', { tarefas })
     })
     
     resposta.render('home')
